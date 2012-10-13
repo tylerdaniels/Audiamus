@@ -9,6 +9,6 @@ namespace FastForwardNET {
 	public ref class FFNet
 	{
 	public:
-		FFNet();
+		static void RegisterAll( void );
 	};
 }

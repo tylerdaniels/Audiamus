@@ -6,7 +6,6 @@
 
 using namespace FastForwardNET;
 
-FFNet::FFNet() {
-	// Do Something
+void FFNet::RegisterAll( void ) {
 	av_register_all();
 }

@@ -23,7 +23,7 @@ namespace Audiamus
         public MainWindow()
         {
             InitializeComponent();
-            FastForwardNET.FFNet c = new FastForwardNET.FFNet();
+            FastForwardNET.FFNet.RegisterAll();
         }
     }
 }

@@ -114,7 +114,7 @@ float exp2f(float n) {
 
 float roundf(float x)
 {
-	return floor(x + 0.5);
+	return floor(x + 0.5f);
 }
 
 int __cdecl snprintf(char* buffer, size_t n, const char *format, ...)
@@ -132,8 +132,8 @@ long long __cdecl strtoll (const char* __restrict nptr, char ** __restrict endpt
    return _strtoi64(nptr, endptr, base);
 }
 
-static const float CBRT2 = 1.25992104989487316477;
-static const float CBRT4 = 1.58740105196819947475;
+static const float CBRT2 = 1.25992104989487316477f;
+static const float CBRT4 = 1.58740105196819947475f;
 float cbrtf (float x) {
         int e, rem, sign;
         float z;
@@ -156,11 +156,11 @@ float cbrtf (float x) {
         // Approximate cube root of number between .5 and 1,                                                                       
         // peak relative error = 9.2e-6                                                                                             
         //
-        x = (((-0.13466110473359520655053  * x
-              + 0.54664601366395524503440 ) * x
-              - 0.95438224771509446525043 ) * x
-              + 1.1399983354717293273738  ) * x
-              + 0.40238979564544752126924;
+        x = (((-0.13466110473359520655053f  * x
+              + 0.54664601366395524503440f ) * x
+              - 0.95438224771509446525043f ) * x
+              + 1.1399983354717293273738f  ) * x
+              + 0.40238979564544752126924f;
 
         // exponent divided by 3
         if (e >= 0)
@@ -191,7 +191,7 @@ float cbrtf (float x) {
         x = ldexpf(x, e);
 
         // Newton iteration
-        x -= ( x - (z/(x*x)) ) * 0.333333333333;
+        x -= ( x - (z/(x*x)) ) * 0.333333333333f;
 
         if (sign < 0)
                 x = -x;
