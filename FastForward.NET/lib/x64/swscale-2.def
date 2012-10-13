@@ -1,0 +1,234 @@
+EXPORTS
+    ff_M24A @1 DATA
+    ff_M24B @2 DATA
+    ff_M24C @3 DATA
+    ff_abgrToUV_avx @4 DATA
+    ff_abgrToUV_sse2 @5 DATA
+    ff_abgrToY_avx @6 DATA
+    ff_abgrToY_sse2 @7 DATA
+    ff_argbToUV_avx @8 DATA
+    ff_argbToUV_sse2 @9 DATA
+    ff_argbToY_avx @10 DATA
+    ff_argbToY_sse2 @11 DATA
+    ff_bgr24ToUV_avx @12 DATA
+    ff_bgr24ToUV_sse2 @13 DATA
+    ff_bgr24ToUV_ssse3 @14 DATA
+    ff_bgr24ToY_avx @15 DATA
+    ff_bgr24ToY_sse2 @16 DATA
+    ff_bgr24ToY_ssse3 @17 DATA
+    ff_bgr2UCoeff @18 DATA
+    ff_bgr2UVOffset @19 DATA
+    ff_bgr2VCoeff @20 DATA
+    ff_bgr2YCoeff @21 DATA
+    ff_bgr2YOffset @22 DATA
+    ff_bgraToUV_avx @23 DATA
+    ff_bgraToUV_sse2 @24 DATA
+    ff_bgraToY_avx @25 DATA
+    ff_bgraToY_sse2 @26 DATA
+    ff_dither4 @27 DATA
+    ff_dither8 @28 DATA
+    ff_getSwsFunc @29
+    ff_get_unscaled_swscale @30
+    ff_hscale10to15_4_sse2 @31 DATA
+    ff_hscale10to15_4_ssse3 @32 DATA
+    ff_hscale10to15_8_sse2 @33 DATA
+    ff_hscale10to15_8_ssse3 @34 DATA
+    ff_hscale10to15_X4_sse2 @35 DATA
+    ff_hscale10to15_X4_ssse3 @36 DATA
+    ff_hscale10to15_X8_sse2 @37 DATA
+    ff_hscale10to15_X8_ssse3 @38 DATA
+    ff_hscale10to19_4_sse2 @39 DATA
+    ff_hscale10to19_4_sse4 @40 DATA
+    ff_hscale10to19_4_ssse3 @41 DATA
+    ff_hscale10to19_8_sse2 @42 DATA
+    ff_hscale10to19_8_sse4 @43 DATA
+    ff_hscale10to19_8_ssse3 @44 DATA
+    ff_hscale10to19_X4_sse2 @45 DATA
+    ff_hscale10to19_X4_sse4 @46 DATA
+    ff_hscale10to19_X4_ssse3 @47 DATA
+    ff_hscale10to19_X8_sse2 @48 DATA
+    ff_hscale10to19_X8_sse4 @49 DATA
+    ff_hscale10to19_X8_ssse3 @50 DATA
+    ff_hscale12to15_4_sse2 @51 DATA
+    ff_hscale12to15_4_ssse3 @52 DATA
+    ff_hscale12to15_8_sse2 @53 DATA
+    ff_hscale12to15_8_ssse3 @54 DATA
+    ff_hscale12to15_X4_sse2 @55 DATA
+    ff_hscale12to15_X4_ssse3 @56 DATA
+    ff_hscale12to15_X8_sse2 @57 DATA
+    ff_hscale12to15_X8_ssse3 @58 DATA
+    ff_hscale12to19_4_sse2 @59 DATA
+    ff_hscale12to19_4_sse4 @60 DATA
+    ff_hscale12to19_4_ssse3 @61 DATA
+    ff_hscale12to19_8_sse2 @62 DATA
+    ff_hscale12to19_8_sse4 @63 DATA
+    ff_hscale12to19_8_ssse3 @64 DATA
+    ff_hscale12to19_X4_sse2 @65 DATA
+    ff_hscale12to19_X4_sse4 @66 DATA
+    ff_hscale12to19_X4_ssse3 @67 DATA
+    ff_hscale12to19_X8_sse2 @68 DATA
+    ff_hscale12to19_X8_sse4 @69 DATA
+    ff_hscale12to19_X8_ssse3 @70 DATA
+    ff_hscale14to15_4_sse2 @71 DATA
+    ff_hscale14to15_4_ssse3 @72 DATA
+    ff_hscale14to15_8_sse2 @73 DATA
+    ff_hscale14to15_8_ssse3 @74 DATA
+    ff_hscale14to15_X4_sse2 @75 DATA
+    ff_hscale14to15_X4_ssse3 @76 DATA
+    ff_hscale14to15_X8_sse2 @77 DATA
+    ff_hscale14to15_X8_ssse3 @78 DATA
+    ff_hscale14to19_4_sse2 @79 DATA
+    ff_hscale14to19_4_sse4 @80 DATA
+    ff_hscale14to19_4_ssse3 @81 DATA
+    ff_hscale14to19_8_sse2 @82 DATA
+    ff_hscale14to19_8_sse4 @83 DATA
+    ff_hscale14to19_8_ssse3 @84 DATA
+    ff_hscale14to19_X4_sse2 @85 DATA
+    ff_hscale14to19_X4_sse4 @86 DATA
+    ff_hscale14to19_X4_ssse3 @87 DATA
+    ff_hscale14to19_X8_sse2 @88 DATA
+    ff_hscale14to19_X8_sse4 @89 DATA
+    ff_hscale14to19_X8_ssse3 @90 DATA
+    ff_hscale16to15_4_sse2 @91 DATA
+    ff_hscale16to15_4_ssse3 @92 DATA
+    ff_hscale16to15_8_sse2 @93 DATA
+    ff_hscale16to15_8_ssse3 @94 DATA
+    ff_hscale16to15_X4_sse2 @95 DATA
+    ff_hscale16to15_X4_ssse3 @96 DATA
+    ff_hscale16to15_X8_sse2 @97 DATA
+    ff_hscale16to15_X8_ssse3 @98 DATA
+    ff_hscale16to19_4_sse2 @99 DATA
+    ff_hscale16to19_4_sse4 @100 DATA
+    ff_hscale16to19_4_ssse3 @101 DATA
+    ff_hscale16to19_8_sse2 @102 DATA
+    ff_hscale16to19_8_sse4 @103 DATA
+    ff_hscale16to19_8_ssse3 @104 DATA
+    ff_hscale16to19_X4_sse2 @105 DATA
+    ff_hscale16to19_X4_sse4 @106 DATA
+    ff_hscale16to19_X4_ssse3 @107 DATA
+    ff_hscale16to19_X8_sse2 @108 DATA
+    ff_hscale16to19_X8_sse4 @109 DATA
+    ff_hscale16to19_X8_ssse3 @110 DATA
+    ff_hscale8to15_4_sse2 @111 DATA
+    ff_hscale8to15_4_ssse3 @112 DATA
+    ff_hscale8to15_8_sse2 @113 DATA
+    ff_hscale8to15_8_ssse3 @114 DATA
+    ff_hscale8to15_X4_sse2 @115 DATA
+    ff_hscale8to15_X4_ssse3 @116 DATA
+    ff_hscale8to15_X8_sse2 @117 DATA
+    ff_hscale8to15_X8_ssse3 @118 DATA
+    ff_hscale8to19_4_sse2 @119 DATA
+    ff_hscale8to19_4_sse4 @120 DATA
+    ff_hscale8to19_4_ssse3 @121 DATA
+    ff_hscale8to19_8_sse2 @122 DATA
+    ff_hscale8to19_8_sse4 @123 DATA
+    ff_hscale8to19_8_ssse3 @124 DATA
+    ff_hscale8to19_X4_sse2 @125 DATA
+    ff_hscale8to19_X4_sse4 @126 DATA
+    ff_hscale8to19_X4_ssse3 @127 DATA
+    ff_hscale8to19_X8_sse2 @128 DATA
+    ff_hscale8to19_X8_sse4 @129 DATA
+    ff_hscale8to19_X8_ssse3 @130 DATA
+    ff_hscale9to15_4_sse2 @131 DATA
+    ff_hscale9to15_4_ssse3 @132 DATA
+    ff_hscale9to15_8_sse2 @133 DATA
+    ff_hscale9to15_8_ssse3 @134 DATA
+    ff_hscale9to15_X4_sse2 @135 DATA
+    ff_hscale9to15_X4_ssse3 @136 DATA
+    ff_hscale9to15_X8_sse2 @137 DATA
+    ff_hscale9to15_X8_ssse3 @138 DATA
+    ff_hscale9to19_4_sse2 @139 DATA
+    ff_hscale9to19_4_sse4 @140 DATA
+    ff_hscale9to19_4_ssse3 @141 DATA
+    ff_hscale9to19_8_sse2 @142 DATA
+    ff_hscale9to19_8_sse4 @143 DATA
+    ff_hscale9to19_8_ssse3 @144 DATA
+    ff_hscale9to19_X4_sse2 @145 DATA
+    ff_hscale9to19_X4_sse4 @146 DATA
+    ff_hscale9to19_X4_ssse3 @147 DATA
+    ff_hscale9to19_X8_sse2 @148 DATA
+    ff_hscale9to19_X8_sse4 @149 DATA
+    ff_hscale9to19_X8_ssse3 @150 DATA
+    ff_nv12ToUV_avx @151 DATA
+    ff_nv12ToUV_sse2 @152 DATA
+    ff_nv21ToUV_avx @153 DATA
+    ff_nv21ToUV_sse2 @154 DATA
+    ff_rgb24ToUV_avx @155 DATA
+    ff_rgb24ToUV_sse2 @156 DATA
+    ff_rgb24ToUV_ssse3 @157 DATA
+    ff_rgb24ToY_avx @158 DATA
+    ff_rgb24ToY_sse2 @159 DATA
+    ff_rgb24ToY_ssse3 @160 DATA
+    ff_rgbaToUV_avx @161 DATA
+    ff_rgbaToUV_sse2 @162 DATA
+    ff_rgbaToY_avx @163 DATA
+    ff_rgbaToY_sse2 @164 DATA
+    ff_sws_init_input_funcs @165
+    ff_sws_init_output_funcs @166
+    ff_sws_init_swScale_mmx @167
+    ff_sws_pb_64 @168 DATA
+    ff_uyvyToUV_avx @169 DATA
+    ff_uyvyToUV_sse2 @170 DATA
+    ff_uyvyToY_sse2 @171 DATA
+    ff_w1111 @172 DATA
+    ff_yuv2plane1_10_avx @173 DATA
+    ff_yuv2plane1_10_sse2 @174 DATA
+    ff_yuv2plane1_16_avx @175 DATA
+    ff_yuv2plane1_16_sse2 @176 DATA
+    ff_yuv2plane1_16_sse4 @177 DATA
+    ff_yuv2plane1_8_avx @178 DATA
+    ff_yuv2plane1_8_sse2 @179 DATA
+    ff_yuv2plane1_9_avx @180 DATA
+    ff_yuv2plane1_9_sse2 @181 DATA
+    ff_yuv2planeX_10_avx @182 DATA
+    ff_yuv2planeX_10_sse2 @183 DATA
+    ff_yuv2planeX_10_sse4 @184 DATA
+    ff_yuv2planeX_16_sse4 @185 DATA
+    ff_yuv2planeX_8_avx @186 DATA
+    ff_yuv2planeX_8_sse2 @187 DATA
+    ff_yuv2planeX_8_sse4 @188 DATA
+    ff_yuv2planeX_9_avx @189 DATA
+    ff_yuv2planeX_9_sse2 @190 DATA
+    ff_yuv2planeX_9_sse4 @191 DATA
+    ff_yuv2rgb_c_init_tables @192
+    ff_yuv2rgb_coeffs @193 DATA
+    ff_yuv2rgb_get_func_ptr @194
+    ff_yuv2rgb_init_mmx @195
+    ff_yuyvToUV_avx @196 DATA
+    ff_yuyvToUV_sse2 @197 DATA
+    ff_yuyvToY_sse2 @198 DATA
+    sws_addVec @199
+    sws_allocVec @200
+    sws_alloc_context @201
+    sws_cloneVec @202
+    sws_context_class @203 DATA
+    sws_convVec @204
+    sws_convertPalette8ToPacked24 @205
+    sws_convertPalette8ToPacked32 @206
+    sws_format_name @207
+    sws_freeContext @208
+    sws_freeFilter @209
+    sws_freeVec @210
+    sws_getCachedContext @211
+    sws_getCoefficients @212
+    sws_getColorspaceDetails @213
+    sws_getConstVec @214
+    sws_getContext @215
+    sws_getDefaultFilter @216
+    sws_getGaussianVec @217
+    sws_getIdentityVec @218
+    sws_get_class @219
+    sws_init_context @220
+    sws_isSupportedInput @221
+    sws_isSupportedOutput @222
+    sws_normalizeVec @223
+    sws_printVec2 @224
+    sws_rgb2rgb_init @225
+    sws_scale @226
+    sws_scaleVec @227
+    sws_setColorspaceDetails @228
+    sws_shiftVec @229
+    sws_subVec @230
+    swscale_configuration @231
+    swscale_license @232
+    swscale_version @233
